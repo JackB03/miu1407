@@ -73,7 +73,7 @@ var myInformation = Ti.UI.createTableView({
 myInformation.style = Ti.UI.iPhone.TableViewStyle.GROUPED;
 
 
-var rosterSection = Ti.UI.createTableViewSection({
+var infoSection = Ti.UI.createTableViewSection({
 	headerTitle: "About Me Questions"
 });
 
@@ -104,7 +104,7 @@ var getDetail = function(dataSource){
 	});
 	
 		
-		var playerInfo = Ti.UI.createLabel({
+		var theAnswers = Ti.UI.createLabel({
 			text: dataSource.desc,
 			color: "#BDBDBD",
 			font: {fontFamily: "helvetica", fontSize: 22, fontStyle: 'italic'},
@@ -142,7 +142,7 @@ var getDetail = function(dataSource){
 	backButton.addEventListener("click", back);
 	
 	// Couldnt figure out how to make the NAV variable come from the app.js
-	detailWindow.add(detailBorder, playerInfo, backButton);
+	detailWindow.add(detailBorder, theAnswers, backButton);
 	nav2.open();
 		
 };
@@ -154,17 +154,17 @@ for(var i=0, j=myData.personal.theInformation.length; i<j; i++){
 		desc: myData.personal.theInformation[i].answer,
 		hasChild: true,
 		backgroundColor: '#585858',
-		color: '#0404B4'
+		color: '#08088A'
 	});
 	
-	rosterSection.add(theRow);
+	infoSection.add(theRow);
 	
 	
 }
 
-var playerSection = [rosterSection];
+var myInfoSection = [infoSection];
 
-myInformation.setData(playerSection);
+myInformation.setData(myInfoSection);
 
 myInformation.addEventListener("click", function(event){
 	getDetail(event.source);
