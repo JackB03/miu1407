@@ -85,7 +85,7 @@ var getDetail = function(dataSource){
 			title: dataSource.title,
 			barColor: '#1C1C1C',
 			titleAttributes:  {
-		        color:'#fff',
+		        color:'#BDBDBD',
 		        font: {fontFamily:'Times', fontSize:23},
 		        shadow:{color:'#0404B4', offset:{width:1,height:1}}
 		   },
@@ -106,9 +106,9 @@ var getDetail = function(dataSource){
 		
 		var playerInfo = Ti.UI.createLabel({
 			text: dataSource.desc,
-			color: "#fff",
+			color: "#BDBDBD",
 			font: {fontFamily: "helvetica", fontSize: 22, fontStyle: 'italic'},
-			shadowColor: 'blue',
+			shadowColor: '#0404B4',
 			shadowOffset: {x:1, y:1},
 			shadowRadius: 2,
 			top: detailBorder.top + detailBorder.height + 75,
@@ -154,7 +154,7 @@ for(var i=0, j=myData.personal.theInformation.length; i<j; i++){
 		desc: myData.personal.theInformation[i].answer,
 		hasChild: true,
 		backgroundColor: '#585858',
-		color: '#fff'
+		color: '#0404B4'
 	});
 	
 	rosterSection.add(theRow);

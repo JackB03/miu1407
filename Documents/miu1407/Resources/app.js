@@ -9,7 +9,7 @@ var mainWindow = Ti.UI.createWindow({
 	titleAttributes:  {
         color:'#0404B4',
         font: {fontFamily:'Roboto', fontSize:24},
-        shadow:{color:'#fff', offset:{width:1,height:1}}
+        shadow:{color:'#BDBDBD', offset:{width:1,height:1}}
    },
 	borderWidth: 1,
 	statusBarStyle: Titanium.UI.iPhone.StatusBar.LIGHT_CONTENT
@@ -72,7 +72,7 @@ var openWindow = function(){
 			titleAttributes:  {
 		        color:'#0404B4',
 		        font: {fontFamily:'Times Roman', fontSize:28},
-		        shadow:{color:'#fff', offset:{width:1,height:1}}
+		        shadow:{color:'#BDBDBD', offset:{width:1,height:1}}
 		   },
 			borderWidth: 1,
 			statusBarStyle: Titanium.UI.iPhone.StatusBar.LIGHT_CONTENT,
