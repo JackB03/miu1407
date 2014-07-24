@@ -10,7 +10,7 @@ var win1 = Titanium.UI.createWindow({
 
 
 var title = Titanium.UI.createLabel({
-	backgroundColor:'yellow',
+	backgroundColor:'purple',
 	height:50,
 	top: 0,
 	width:'100%',

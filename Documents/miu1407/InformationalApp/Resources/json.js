@@ -91,7 +91,7 @@ var rosters = {
 var currentWindow = Ti.UI.currentWindow;
 
 var rosterTitle = Titanium.UI.createLabel({
-			 backgroundColor:'yellow',
+			 backgroundColor:'purple',
 			 height:50,
 			 top: 0,
 			 width:'100%',
@@ -133,13 +133,13 @@ var infoSection = Ti.UI.createTableViewSection({
 
 var getDetail = function(dataSource){
 	var detailWindow = Ti.UI.createWindow({
-		backgroundColor: "#2E2E2E",
+		backgroundColor: "#1C1C1C",
 			title: dataSource.title,
-			barColor: '#1C1C1C',
+			barColor: 'purple',
 			titleAttributes:  {
-		        color:'#BDBDBD',
+		        color:'#fff',
 		        font: {fontFamily:'Times', fontSize:23},
-		        shadow:{color:'#0404B4', offset:{width:1,height:1}}
+		        shadow:{color:'#000', offset:{width:1,height:1}}
 		   },
 			borderWidth: 1,
 			statusBarStyle: Titanium.UI.iPhone.StatusBar.LIGHT_CONTENT
@@ -331,7 +331,7 @@ for(var i=0, j=rosters.players.theInformation.length; i<j; i++){
 		img: rosters.players.theInformation[i].image,
 		hasChild: true,
 		backgroundColor: '#585858',
-		color: '#08088A'
+		color: '#fff'
 	});
 	
 	infoSection.add(theRow);
@@ -403,13 +403,11 @@ rosterWindow.open();
 
 var openHome = function(){
 	var homeWindow = Ti.UI.createWindow({
-			backgroundColor: 'A4A4A4',
-			statusBarStyle: Titanium.UI.iPhone.StatusBar.DARK_CONTENT,
 			 url: "app.js"
 		
 		});
 	
-	homeWindow.open(); //It's not letting me return back to the Home Page. Not sure why?
+	homeWindow.open();  //It's not letting me do anything once I get to the Home Page. Not sure why?
 };
 
 var opensignUp = function(){
