@@ -213,7 +213,7 @@ var openHome = function(){
 		
 		});
 	
-	homeWindow.openWindow(win1);  //It's not letting me do anything once I get to the Home Page. Not sure why?
+	homeWindow.open();  //It's not letting me do anything once I get to the Home Page. Not sure why?
 };
 
 var opensignUp = function(){
